@@ -75,9 +75,10 @@ export default function Testimonials() {
     <div className="w-full max-w-6xl mx-auto px-8 py-12 relative overflow-hidden">
       {/* Title Section */}
       <div className="mb-8 text-left">
-        <span className="text-purple-600 font-medium mb-2 inline-block">
-          ⚡ Our Testimonials
-        </span>
+        <div className="text-white bg-purple-600 p-2 rounded-lg font-medium mb-2 inline-block">
+        <span className="text-white">✨</span> Our Testimonials
+        
+        </div>
         <h2 className="text-[#1a365d] text-4xl font-bold mb-4">
           What Our Customers Are Saying
         </h2>
@@ -98,7 +99,7 @@ export default function Testimonials() {
           }}
         >
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="w-1/3 px-4 rounded-lg flex-shrink-0">
+            <div key={testimonial.id} className="w-1/3 px-4 flex-shrink-0">
               <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 h-[200px] w-[320px] flex flex-col justify-between">
                 {/* Testimonial Text */}
                 <p className="text-gray-700 text-base italic mb-4 leading-relaxed flex-1">

@@ -155,7 +155,7 @@ export default function Home() {
             <div className="bg-white rounded-lg py-2 px-4 flex justify-between items-center shadow-sm border">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/placeholder.svg"
+                  src={"/profile-v1.png"}
                   alt="OpenIntervue Logo"
                   width={24}
                   height={24}
@@ -213,9 +213,10 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center mb-6">
-        <span className="text-purple-600 font-medium mb-1 inline-block text-sm">
-          ⚡ Setup Requirements
-        </span>
+      <div className="text-white bg-purple-600 p-2 rounded-lg font-medium mb-2 inline-block">
+        <span className="text-white">✨</span> Setup Requirement
+        
+        </div>
         <h2 className="text-[#1a365d] text-2xl font-bold mb-2">
           Your Interview Right Setup
         </h2>
@@ -249,9 +250,9 @@ export default function Home() {
       <div className="w-full max-w-6xl mx-auto p-6 px-24">
       {/* Header */}
       <div className="text-center mb-8">
-        <span className="text-purple-600 font-medium mb-2 inline-block text-sm">
-          ⚡ Setup Interview
-        </span>
+      <div className="text-white bg-purple-600 p-2 rounded-lg font-medium mb-2 inline-block">
+        <span className="text-white">✨</span> Setup Interview
+        </div>
         <h1 className="text-[#1a365d] text-3xl font-bold mb-3">
           Ace Your Interview With The Right Setup
         </h1>
