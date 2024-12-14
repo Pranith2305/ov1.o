@@ -37,7 +37,7 @@ export default function FaqSection() {
   }
 
   return (
-    <section className="px-24 py-16 md:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="max-w-2xl mx-auto text-center mb-12">
         <span className="inline-flex items-center text-purple-600 font-medium mb-2">
           FAQ's
@@ -51,7 +51,7 @@ export default function FaqSection() {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:bg-gray-50"
+            className="rounded-lg border border-gray-200  bg-white transition-all duration-200 hover:bg-gray-50"
           >
             <button
               onClick={() => toggleAccordion(index)}
@@ -62,7 +62,7 @@ export default function FaqSection() {
               </span>
               {activeIndex === index ? (
                 <svg
-                  className="h-6 w-6 text-purple-600"
+                  className="h-6 w-6 text-purple-600 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -76,7 +76,7 @@ export default function FaqSection() {
                 </svg>
               ) : (
                 <svg
-                  className="h-6 w-6 text-purple-600"
+                  className="h-6 w-6 text-purple-600 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

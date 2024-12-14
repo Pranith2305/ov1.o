@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-16">
+    <footer className="bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Left Column - Logo, Description, and Certificates */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b">
@@ -93,23 +93,23 @@ export default function Footer() {
             <div className="flex gap-6 mb-8">
               {/* Social Icons */}
               <Link href="#" className="text-white hover:text-gray-300">
-                <FiFacebook className="w-6 h-6" />
+                <FiFacebook />
               </Link>
               <Link href="#" className="text-white hover:text-gray-300">
-                <FiTwitter className="w-6 h-6" />
+                <FiTwitter />
               </Link>
               <Link href="#" className="text-white hover:text-gray-300">
-                <FiInstagram className="w-6 h-6" />
+                <FiInstagram  />
               </Link>
               <Link href="#" className="text-white hover:text-gray-300">
-                <FiLinkedin className="w-6 h-6" />
+                <FiLinkedin />
               </Link>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 {/* Correctly applying the className */}
-                <CiMail className="w-5 h-5 text-purple-500" />
+                <CiMail />
                 <span className="text-white">Get updates on OpenIntervue</span>
               </div>
               <div className="flex gap-2">
@@ -119,7 +119,7 @@ export default function Footer() {
                   className="bg-gray-900 text-white px-4 py-2 rounded-md flex-grow focus:outline-none focus:ring-1 focus:ring-purple-500"
                 />
                 <button className="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-md">
-                  <FiArrowRight className="w-5 h-5" />
+                  <FiArrowRight />
                 </button>
               </div>
             </div>
