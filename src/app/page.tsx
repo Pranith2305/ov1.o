@@ -1,10 +1,10 @@
 import { Play, Zap } from 'lucide-react';
 import { Laptop, Wifi, ChromeIcon as Browser } from 'lucide-react';
-import Testimonials from "../../Components/Testimonials";
-import FaqSection from "../../Components/Faq";
-import Footer from "../../Components/Footer";
-import VerificationCards from "../../Components/VerificationCard";
-import RequirementCards from "../../Components/RequirementCards";
+import Testimonials from "../app/Components/Testimonials"
+import FaqSection from "../app/Components/Faq";
+import Footer from "../app/Components/Footer";
+import VerificationCards from "../app/Components/VerificationCard";
+import RequirementCards from "../app/Components/RequirementCards";
 
 export default function Home() {
   return (
