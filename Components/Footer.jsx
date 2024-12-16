@@ -1,21 +1,20 @@
-import { CiMail } from "react-icons/ci"; // Ensure correct import
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiArrowRight } from "react-icons/fi"; // Same for social icons
-import Link from "next/link";
-import Image from "next/image";
+"use client"
+import { Link } from 'react-router-dom'
+import { ArrowBigRight, Linkedin, Twitter, Instagram, Youtube } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-black">
-      <div className="max-w-7xl mx-auto">
-        {/* Left Column - Logo, Description, and Certificates */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b">
-          <div className="col-span-1 md:col-span-1">
+    <div className="bg-black px-4 md:px-8 py-16 mx-4 md:mx-8 mt-4 rounded-xl">
+      <footer className="max-w-7xl mx-auto text-white p-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-12">
+          {/* Left Column - Logo, Description, and Certificates */}
+          <div className="md:col-span-3">
             {/* Logo and Company Name */}
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=32&width=32"
-                  alt=""
+              <div className="w-8 h-8 rounded-full flex items-center justify-center">
+                <img
+                  src="/profile-v1.png"
+                  alt="OpenIntervue Logo"
                   width={24}
                   height={24}
                   className="rounded-full"
@@ -23,29 +22,31 @@ export default function Footer() {
               </div>
               <span className="text-xl font-semibold text-purple-500">OpenIntervue</span>
             </div>
-
+    
             {/* Description */}
-            <p className="text-gray-400 text-sm mb-8">
-              AI Recruitment Tech Stack Industry's leading AI Interviewer and Interview Intelligence Platform
+            <p className="text-white text-sm mb-8">
+              AI Recruitment Tech Stack Industry's 
+              <br/>leading AI Interviewer and Interview
+              <br/> Intelligence Platform
             </p>
-
+    
             {/* Certificates */}
             <div className="flex gap-4">
-              <Image
+              <img
                 src="/placeholder.svg?height=48&width=48"
                 alt="GDPR Certified"
                 width={48}
                 height={48}
                 className="rounded-full"
               />
-              <Image
+              <img
                 src="/placeholder.svg?height=48&width=48"
                 alt="AICPA SOC"
                 width={48}
                 height={48}
                 className="rounded-full"
               />
-              <Image
+              <img
                 src="/placeholder.svg?height=48&width=48"
                 alt="ISO 27001"
                 width={48}
@@ -54,9 +55,9 @@ export default function Footer() {
               />
             </div>
           </div>
-
+    
           {/* Navigation Links */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="md:col-span-2">
             <ul className="space-y-4">
               <li><Link href="/" className="text-white hover:text-gray-300">Home</Link></li>
               <li><Link href="/about" className="text-white hover:text-gray-300">About us</Link></li>
@@ -66,18 +67,18 @@ export default function Footer() {
               <li><Link href="/blogs" className="text-white hover:text-gray-300">Blogs</Link></li>
             </ul>
           </div>
-
-          <div className="col-span-1 md:col-span-1">
+    
+          <div className="md:col-span-2">
             <ul className="space-y-4">
-              <li><Link href="/contact" className="text-white hover:text-gray-300">Contact Us</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-gray-300">Contact Us</Link></li>
               <li><Link href="/demo" className="text-white hover:text-gray-300">AI Interview (Book Demo)</Link></li>
               <li><Link href="/career" className="text-white hover:text-gray-300">Career</Link></li>
               <li><Link href="/faq" className="text-white hover:text-gray-300">FAQ</Link></li>
               <li><Link href="/webinar" className="text-white hover:text-gray-300">Webinar</Link></li>
             </ul>
           </div>
-
-          <div className="col-span-1 md:col-span-1">
+    
+          <div className="md:col-span-2">
             <ul className="space-y-4">
               <li><Link href="/terms" className="text-white hover:text-gray-300">Terms & Condition</Link></li>
               <li><Link href="/privacy" className="text-white hover:text-gray-300">Privacy Policy</Link></li>
@@ -86,51 +87,49 @@ export default function Footer() {
               <li><Link href="/disclaimer" className="text-white hover:text-gray-300">Disclaimer</Link></li>
             </ul>
           </div>
-
+    
           {/* Right Column - Social and Newsletter */}
-          <div className="col-span-1 md:col-span-3">
+          <div className="md:col-span-3">
             <h3 className="text-white mb-6">Follow Us</h3>
             <div className="flex gap-6 mb-8">
-              {/* Social Icons */}
-              <Link href="#" className="text-white hover:text-gray-300">
-                <FiFacebook />
+              {/* LinkedIn */}
+              <Link href="https://www.linkedin.com" className="text-white hover:text-gray-300">
+                <Linkedin className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-white hover:text-gray-300">
-                <FiTwitter />
-              </Link>
-              <Link href="#" className="text-white hover:text-gray-300">
-                <FiInstagram  />
-              </Link>
-              <Link href="#" className="text-white hover:text-gray-300">
-                <FiLinkedin />
-              </Link>
-            </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                {/* Correctly applying the className */}
-                <CiMail />
-                <span className="text-white">Get updates on OpenIntervue</span>
-              </div>
-              <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Email Address" 
-                  className="bg-gray-900 text-white px-4 py-2 rounded-md flex-grow focus:outline-none focus:ring-1 focus:ring-purple-500"
-                />
-                <button className="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-md">
-                  <FiArrowRight />
-                </button>
-              </div>
+              {/* Twitter */}
+              <Link href="https://www.twitter.com" className="text-white hover:text-gray-300">
+                <Twitter className="w-6 h-6" />
+              </Link>
+
+              {/* Instagram */}
+              <Link href="https://www.instagram.com" className="text-white hover:text-gray-300">
+                <Instagram className="w-6 h-6" />
+              </Link>
+
+              {/* YouTube */}
+              <Link href="https://www.youtube.com" className="text-white hover:text-gray-300">
+                <Youtube className="w-6 h-6" />
+              </Link>
             </div>
+    
+            {/* Newsletter Form */}
+            <h3 className="text-white mb-4">Subscribe to Our Newsletter</h3>
+            <form action="#" method="POST" className="flex gap-4">
+              <input
+                type="email"
+                name="email"
+                className="p-3 w-72 text-sm text-black bg-black border-b border-white focus:outline-none focus:border-purple-500"
+                placeholder="Enter your email"
+              />
+              <button type="submit" className="p-3 bg-purple-500 text-white rounded-md hover:bg-purple-600 transition-colors duration-300">
+                <ArrowBigRight className="w-6 h-6" />
+              </button>
+            </form>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="text-center text-gray-400 text-sm mt-16">
-          Copyright © 2023-2024 OpenIntervue All rights reserved.
-        </div>
-      </div>
-    </footer>
-  );
+      </footer>
+    </div>
+  )
 }
+

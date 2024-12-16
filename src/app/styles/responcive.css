@@ -1,0 +1,111 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .max-w-[600px] {
+      max-width: 100%;
+    }
+  
+    .px-24 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .text-4xl {
+      font-size: 2rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.75rem;
+    }
+  
+    .w-28, .h-28 {
+      width: 5rem;
+      height: 5rem;
+    }
+  
+    .w-16, .h-16 {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .max-w-[600px] {
+      max-width: 90%;
+    }
+  
+    .px-24 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .max-w-[600px] {
+      max-width: 600px;
+    }
+  
+    .px-24 {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .px-24 {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .max-w-[1200px] {
+      max-width: 1200px;
+    }
+  }
+  
+  /* Global responsive adjustments */
+  .flex-col-mobile {
+    flex-direction: column;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .flex-col-mobile {
+      flex-direction: row;
+    }
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .text-center-mobile {
+      text-align: left;
+    }
+  }
+  
+  .w-full-mobile {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .w-full-mobile {
+      width: auto;
+    }
+  }
+  
+  .mb-4-mobile {
+    margin-bottom: 1rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .mb-4-mobile {
+      margin-bottom: 0;
+    }
+  }
+  
+  
